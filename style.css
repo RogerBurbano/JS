@@ -1,0 +1,14 @@
+#numbers {
+    background-color: orangered;
+    margin:20px;
+}
+
+.btn-primary{
+    background-color: rgb(29, 26, 25);
+    border: none;
+    margin: 10px;
+}
+.btn-primary:hover{
+    background-color: rgb(206, 163, 47);
+    padding: 2px;
+}
