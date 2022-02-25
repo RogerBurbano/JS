@@ -1,4 +1,4 @@
-let frutas = ['platano', 'sandia', 'pera','uva']
+// let frutas = ['platano', 'sandia', 'pera','uva']
 // console.log(frutas.length);
 // console.log(frutas[0]);
 // console.log(frutas[1]);
@@ -13,13 +13,14 @@ let frutas = ['platano', 'sandia', 'pera','uva']
 
 //for of recorre datos u objetos iterables
 
-for(let fruta of frutas){   //Fruta seria como cada elemento de array Frutas
-    console.log(fruta)
-}
+// for(let fruta of frutas){   //Fruta seria como cada elemento de array Frutas
+//     console.log(fruta)
+// }
 
 
-let nombreRey = 'Roger Andres'
+// let nombreRey = 'Roger Andres'
 
-for( letra of nombreRey ){   //aca leemos las letras de la variable nombreRey
-    console.log(letra)
-}
+// for( letra of nombreRey ){   //aca leemos las letras de la variable nombreRey
+//     console.log(letra)
+// }
+

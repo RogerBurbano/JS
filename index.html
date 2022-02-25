@@ -1,29 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/estilos/style.css" />
-    <link rel="shortcut icon" href="images/javascript.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/javascript.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
     <title>js</title>
-</head>
+  </head>
 
-<body class="fondo">
+  <body class="fondo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ortopedicos Danna y Andre</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              onclick="buscar()"
+              class="btn btn-outline-success"
+              type="submit"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <!-- <div id="numbers"></div> -->
     <div id="result"></div>
-    <div class="d-grid gap-2 col-2 mx-auto">
-        
-        <button onclick="boing()" class="btn btn-danger" type="button">Dejeme quieto !!</button>
+    <div class="on">
+
+      <div class="productos">
+      <div class="card" style="width: 18rem;">
+        <img src="images/baston.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Muletas</h5>
+          <p class="card-text">De todas las variedades y estilos para tu ancianito preferido.</p>
+          <h6>Precio $5000</h6>
+          <a href="#" class="btn btn-warning">Comprar</a>
+        </div>
       </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/camilla-hidraulica.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Camillas</h5>
+          <p class="card-text">De todas las variedades y estilos para tu ancianito preferido.</p>
+          <h6>Precio $5000</h6>
+          <a href="#" class="btn btn-warning">Comprar</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/silla.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Silla de Ruedas</h5>
+          <p class="card-text">De todas las variedades y estilos para tu ancianito preferido.</p>
+          <h6 ">Precio $5000</h6>
+          <a onclick="ortopedia()" href="#" class="btn btn-warning">Comprar</a>
+        </div>
+      </div>
+    </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="/Javascript/funciones.js"></script>
-</body>
 
+      <button onclick="boing()" class="btn btn-danger" type="button">
+        Dejeme quieto !!
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Javascript/breakingMyHead.js"></script>
+  </body>
 </html>

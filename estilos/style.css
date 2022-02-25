@@ -8,3 +8,34 @@
     margin-top: 200px;
 
 }
+
+.navbar{
+    font-family: 'Staatliches', cursive;
+    background-image: url();
+}
+body{
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn{
+margin-left: 80px;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    
+}
+img{
+    height: 50%;
+}
+h5{
+    text-align: center;
+}
+h6{
+    text-align: center;
+}
